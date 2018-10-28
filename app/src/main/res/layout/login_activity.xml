@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_degrade"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxHeight="100dp"
+        android:layout_marginBottom="50dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo_capptan_expert"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/login_CampoEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:hint="Email"
+        android:textCursorDrawable="@drawable/cursor_texto"
+        android:maxLines="1"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/forma_oval_transparente"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/login_CampoSenha"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:hint="Senha"
+        android:textCursorDrawable="@drawable/cursor_texto"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/forma_oval_transparente"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/login_BotaoCadastro"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/forma_oval_transparente"
+            android:text="Cadastro"
+            android:textStyle="bold"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/login_BotaoEntrar"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@drawable/forma_oval_transparente"
+            android:text="Entrar"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/login_BotaoEsqueci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Esqueci a Senha"
+        android:textAllCaps="false"
+        android:textStyle="bold"/>
+
+</LinearLayout>
